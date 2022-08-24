@@ -7,7 +7,7 @@
 .body__index{
     background-image: url(../imagen/fondo_index.jpg);
     background-size: 100%;
-    padding: 0 150px;
+    padding: 0 125px;
 }
 
 .titulo__torneo{
@@ -27,10 +27,13 @@
 }
 
 .contenedor__color{
-    display: flex;
-    flex-wrap: wrap;
     background-color: #14213D;
     padding: 25px 75px;
+}
+
+.contenedor__imangen__inscripciones{
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     justify-content: center;
     align-content: center;
@@ -40,7 +43,6 @@
 .contenedor__inscripciones{
     width: 1200px;
     height: 600px;
-    max-width: 100%;
     overflow: hidden;
 }
 
@@ -73,6 +75,7 @@
 .titulos__blancos{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    max-width: auto;
     font-size: 60px; 
     color: #E5E5E5;
 }
@@ -83,18 +86,13 @@
     font-size: 60px; 
 }
 
-/* REGLAS */
-
 .titulo__reglas{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 15px;
 }
 
-/* PREMIOS */ 
-
 .premio__imagen{
-    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -116,7 +114,7 @@
 }
 
 .contenedor__imagen img{
-    width: 70%;
+    width: 100%;
 }
 
 .caracteristicas{
@@ -124,9 +122,9 @@
     border-radius: 5px;
     border-color: #14213D;
     width: 100%;
+    margin-top: 25px;
     display: inline-block;
     text-align: left;
-    margin: 20px;
     font-weight: 20px;
     font-size: 20px;
 
@@ -137,13 +135,18 @@
     text-align: center;
 }
 
+.caracteristicas li{
+    font-size: 25px;
+}
+
 
 
 /*COSAS QUE TENGO QUE MODIFICAR */
 
 .social-media{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    
 }
 
 .social-media-icon{
@@ -163,28 +166,16 @@
 }
 
 
-/* HASTA ACA */
-
-
-
- @media screen and (max-width : 800px){
+@media screen and (max-width : 900px){
     .body__index{
         padding: 0 50px;
     }
 
-    .contenedor__texto{
+    .contenedor__texto, .contenedor__texto__color{
         font-size: 20px;
     }
     
-    .contenedor__texto__color{
-        font-size: 20px;
-    }
-    
-    .titulos__blancos{
-        font-size: 40px; 
-    }
-    
-    .titulos__negros{
+    .titulos__blancos, .titulos__negros{
         font-size: 40px; 
     }
 
@@ -193,7 +184,55 @@
     }
 
     .contenedor__imagen{
+        width: 100%
+    }
+
+    .social-media{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width : 400px){
+    .body__index{
+        padding: 0 15px;
+    }
+
+    .contenedor__general{
+        padding: 15px 30px;
+    }
+
+    .contenedor__color{
+        padding: 15px 40px;
+    }
+
+    .contenedor__inscripciones{
+        width: 500px;
+        height: 150px;
+    }
+
+    .contenedor__texto{
+        font-size: 10px;
+    }
+        
+    .contenedor__texto__color{
+        font-size: 10px;
+    }
+        
+    .titulos__blancos, .titulos__negros{
+        font-size: 30px; 
+    }
+
+    .nombre__puesto, .caracteristicas h3{
+        font-size: 20px;
+    }
+
+    .contenedor__imagen{
         width: 80%
+    }
+    
+    .caracteristicas li{
+        font-size: 10px;
     }
 
     .footer-content{
@@ -201,9 +240,22 @@
     }
 
     .social-media{
-        width: 80%;
+        width: 70%;
     }
- }
+
+    .social-media-icon{
+        width: 40px;
+        height: 40px;
+        color: #fff;
+    }
+    
+    .social-media-icon i{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+}
+
 
 /* PAGINA Street Fighter */
 
@@ -267,6 +319,38 @@
     color: white;
     margin: 5px 0;
     font-size: 35px;
+
+}
+
+@media screen and (max-width : 400px){
+    .registro__SF{
+        min-height: 50vh;
+        width:  300px;
+        padding: 20px;
+    }
+    
+    .registro__SF h4{
+        font-size: 25px;
+    }
+    
+    .registro__SF p{
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+    }
+    
+    .ingreso__SF{
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    
+    .registro__SF .boton__SF{
+        width: 100%;
+        padding: 6px;
+        color: white;
+        margin: 0px;
+        font-size: 20px;
+    }
 
 }
 
