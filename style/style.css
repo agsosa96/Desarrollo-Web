@@ -133,6 +133,7 @@
 .caracteristicas h3{
     margin-top: 5px;
     text-align: center;
+    font-size: 25px;
 }
 
 .caracteristicas li{
@@ -171,7 +172,7 @@
         padding: 0 50px;
     }
 
-    .contenedor__texto, .contenedor__texto__color{
+    .contenedor__texto, .contenedor__texto__color, .caracteristicas li{
         font-size: 20px;
     }
     
@@ -198,12 +199,8 @@
         padding: 0 15px;
     }
 
-    .contenedor__general{
+    .contenedor__general,  .contenedor__color{
         padding: 15px 30px;
-    }
-
-    .contenedor__color{
-        padding: 15px 40px;
     }
 
     .contenedor__inscripciones{
@@ -211,11 +208,7 @@
         height: 150px;
     }
 
-    .contenedor__texto{
-        font-size: 10px;
-    }
-        
-    .contenedor__texto__color{
+    .contenedor__texto, .contenedor__texto__color, .caracteristicas li{
         font-size: 10px;
     }
         
@@ -230,10 +223,6 @@
     .contenedor__imagen{
         width: 80%
     }
-    
-    .caracteristicas li{
-        font-size: 10px;
-    }
 
     .footer-content{
         justify-content: center;
@@ -246,7 +235,7 @@
     .social-media-icon{
         width: 40px;
         height: 40px;
-        color: #fff;
+        border-radius: 90%;
     }
     
     .social-media-icon i{
