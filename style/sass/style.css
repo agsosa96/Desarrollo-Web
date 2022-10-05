@@ -30,6 +30,9 @@
 .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb {
   background: #222222;
 }
+.body__pubg .contenedor__pubg .formulario__pugb .forma__pugb > * {
+  padding: 1em;
+}
 .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,20 +47,7 @@
 .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form .block {
   grid-column: 1/3;
 }
-.body__pubg .contenedor__pubg .formulario__pugb .formulario__info {
-  background: #000;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.forma__pugb > * {
-  padding: 1em;
-}
-
-.forma__pugb form button, .forma__pugb form input, .forma__pugb form textarea {
+.body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form button, .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form input, .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form textarea {
   width: 100%;
   padding: 0.7em;
   border: none;
@@ -66,24 +56,29 @@ ul {
   color: #fff;
   border-bottom: 1px solid #d63031;
 }
-
-.forma__pugb form button {
+.body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form button {
   background: #B70E21;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
-
-.forma__pugb form button:hover, .forma__pugb form button:focus {
+.body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form button:hover, .body__pubg .contenedor__pubg .formulario__pugb .forma__pugb form button:focus {
   background: #d63031;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
 }
-
-.formulario__info h4, .formulario__info ul, .formulario__info p {
+.body__pubg .contenedor__pubg .formulario__pugb .formulario__info {
+  background: #000;
+}
+.body__pubg .contenedor__pubg .formulario__pugb .formulario__info h4, .body__pubg .contenedor__pubg .formulario__pugb .formulario__info ul, .body__pubg .contenedor__pubg .formulario__pugb .formulario__info p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
