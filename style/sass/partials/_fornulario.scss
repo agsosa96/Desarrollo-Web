@@ -1,5 +1,5 @@
 .body__pubg {
-    background: $colorFondo;
+    background: $colorFondoFormulario;
     color: #fff; 
     font-family: 'Open Sans', sans-serif;
     padding: 0 1.5em;
@@ -21,7 +21,7 @@
         }
 
         .formulario__pugb {
-            box-shadow: 0 0 20px 0 #fff;
+            box-shadow: 0 0 20px 0 $colorSombraFormulario;
 
             .forma__pugb {
                 background: #222222;
