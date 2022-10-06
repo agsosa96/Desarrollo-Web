@@ -31,7 +31,7 @@
     overflow: hidden;
     justify-content: center;
     align-content: center;
-    transition: all 500ms e;
+    transition: all 500ms;
 }
 
 .contenedor__inscripciones{

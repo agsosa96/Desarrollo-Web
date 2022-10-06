@@ -1,0 +1,248 @@
+.body__index{
+    background-image: url(../../../imagen/fondo_index.jpg);
+    background-size: 100%;
+    padding: 0 125px;
+
+    .titulo__torneo{
+        height: 100vh;
+        background-image: linear-gradient(to top, rgba(251, 194, 235, 0.301) 0%, hsla(218, 68%, 79%, 0.301) 100%), url(../../../imagen/torneo_imagen.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+
+    .contenedor__general{
+        background-color: #fff;
+        overflow: hidden;
+        margin: auto;
+        padding: 25px 75px;
+
+        .contenedor__texto{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-align: justify;
+            font-size: 30px;
+        }
+        
+
+        .titulo__reglas{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .titulos__negros{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 60px; 
+        }
+
+        .premio__imagen{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .contenedor__imagen {
+                width: 40%;
+                text-align: center;
+                margin: 15px;
+
+                .nombre__puesto{
+                    width: 100%;
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: 40px;
+                    margin: 10px;
+                }
+                
+                img{
+                width: 100%;
+                }
+
+                .caracteristicas{
+                    border-style: solid;
+                    border-radius: 5px;
+                    border-color: #14213D;
+                    width: 100%;
+                    margin-top: 25px;
+                    display: inline-block;
+                    text-align: left;
+                    font-weight: 20px;
+                    font-size: 20px;
+
+                    h3{
+                        margin-top: 5px;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    
+                    li{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor__color{
+        background-color: #14213D;
+        padding: 25px 75px;
+
+        .titulos__blancos{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            max-width: auto;
+            font-size: 60px; 
+            color: #E5E5E5;
+        }
+
+
+        .contenedor__imangen__inscripciones{
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            justify-content: center;
+            align-content: center;
+            transition: all 500ms;
+
+            .contenedor__inscripciones{
+                width: 1200px;
+                height: 600px;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 50ms ease;
+
+                    &:hover{
+                        transform: scale(1.2);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .contenedor__texto__color{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-align: justify;
+            font-size: 30px;
+            color: #E5E5E5;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*COSAS QUE TENGO QUE MODIFICAR */
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 40px;
+    line-height: 80px;
+}
+
+
+@media screen and (max-width : 900px){
+    .body__index{
+        padding: 0 50px;
+    }
+
+    .contenedor__texto, .contenedor__texto__color, .caracteristicas li{
+        font-size: 20px;
+    }
+    
+    .titulos__blancos, .titulos__negros{
+        font-size: 40px; 
+    }
+
+    .nombre__puesto{
+        font-size: 30px;
+    }
+
+    .contenedor__imagen{
+        width: 100%
+    }
+
+    .social-media{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width : 400px){
+    .body__index{
+        padding: 0 15px;
+    }
+
+    .contenedor__general,  .contenedor__color{
+        padding: 15px 30px;
+    }
+
+    .contenedor__inscripciones{
+        width: 500px;
+        height: 150px;
+    }
+
+    .contenedor__texto, .contenedor__texto__color, .caracteristicas li{
+        font-size: 10px;
+    }
+        
+    .titulos__blancos, .titulos__negros{
+        font-size: 30px; 
+    }
+
+    .nombre__puesto, .caracteristicas h3{
+        font-size: 20px;
+    }
+
+    .contenedor__imagen{
+        width: 80%
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 70%;
+    }
+
+    .social-media-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 90%;
+    }
+    
+    .social-media-icon i{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+}
